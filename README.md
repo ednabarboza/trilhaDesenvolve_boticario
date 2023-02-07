@@ -1,76 +1,76 @@
- 📚 HTML5 e CSS3 parte 1: crie uma página da Web
+ <h1>📚 HTML5 e CSS3 parte 1: crie uma página da Web<h1>
 
-1. Marcação do primeiro texto:
-1.1 Introdução
-1.2 Download do texto base
-1.3 O primeiro desafio do curso
-1.4 Definindo texto
-1.5 Uso de tags
-1.6 Texto-base de uma página
-1.7 Melhorando o texto
-1.8 Estrutura de ênfase correta
-1.9 Consolidando o seu conhecimento
-1.10 O que aprendemos?
+<h2>1. Marcação do primeiro texto:</h2>
+ <p>1.1 Introdução</p>
+<p>1.2 Download do texto base</p>
+<p>1.3 O primeiro desafio do curso</p>
+<p>1.4 Definindo texto</p>
+<p>1.5 Uso de tags</p>
+<p>1.6 Texto-base de uma página</p>
+<p>1.7 Melhorando o texto</p>
+<p>1.8 Estrutura de ênfase correta</p>
+<p>1.9 Consolidando o seu conhecimento</p>
+<p>1.10 O que aprendemos?</p>
 
-2. Separando o conteúdo e informações
-2.1 Projeto da aula anterior
-2.2 Estrutura básica
-2.3 Estrutura do HTML
-2.4 Passando dados para o navegador
-2.5 Lidando com a acentuação
-2.6 Separando conteúdo e informações
-2.7 Estrutura de conteúdo
-2.8 Consolidando o seu conhecimento
-2.9 O que aprendemos?
+<h2>2. Separando o conteúdo e informações</h2>
+<p>2.1 Projeto da aula anterior</p>
+<p>2.2 Estrutura básica</p>
+<p>2.3 Estrutura do HTML</p>
+<p>2.4 Passando dados para o navegador</p>
+<p>2.5 Lidando com a acentuação</p>
+<p>2.6 Separando conteúdo e informações</p>
+<p>2.7 Estrutura de conteúdo</p>
+<p>2.8 Consolidando o seu conhecimento</p>
+<p>2.9 O que aprendemos?</p>
 
-3. Trabalhando com CSS
-3.1 Projeto da aula anterior
-3.2 Começando com CSS
-3.3 Propriedade e o seu valor no CSS
-3.4 Para saber mais: CSS externo
-3.5 Organizando o estilo
-3.6 Declarando um CSS
-3.7 Mesmo CSS em várias páginas
-3.8 Mudando a cor
-3.9 Estilo em cascata
-3.10 Extra: Cores hexadecimais
-3.11 Representando cores no CSS
-3.12 Organizando o CSS
-3.13 Consolidando o seu conhecimento
-3.14 O que aprendemos?
+<h2>3. Trabalhando com CSS</h2>
+<p>3.1 Projeto da aula anterior</p>
+<p>3.2 Começando com CSS</p>
+<p>3.3 Propriedade e o seu valor no CSS</p>
+<p>3.4 Para saber mais: CSS externo</p>
+<p>3.5 Organizando o estilo</p>
+<p>3.6 Declarando um CSS</p>
+<p>3.7 Mesmo CSS em várias páginas</p>
+<p>3.8 Mudando a cor</p>
+<p>3.9 Estilo em cascata</p>
+<p>3.10 Extra: Cores hexadecimais</p>
+<p>3.11 Representando cores no CSS</p>
+<p>3.12 Organizando o CSS</p>
+<p>3.13 Consolidando o seu conhecimento</p>
+<p>3.14 O que aprendemos?</p>
 
-4. Estilizando imagens
-4.1 Projeto da aula anterior
-4.2 Identificador de elemento e tag de imagem
-4.3 O caminho da imagem
-4.4 Sintaxe para adicionar img
-4.5 Adicionando uma imagem
-4.6 CSS para imagens
-4.7 Alterando a largura de um elemento
-4.8 Extra: Time de Front-End
-4.9 O visual do produto
-4.10 Consolidando o seu conhecimento
-4.11 O que aprendemos?
+<h2>4. Estilizando imagens</h2>
+<p>4.1 Projeto da aula anterior</p>
+<p>4.2 Identificador de elemento e tag de imagem</p>
+<p>4.3 O caminho da imagem</p>
+<p>4.4 Sintaxe para adicionar img</p>
+<p>4.5 Adicionando uma imagem</p>
+<p>4.6 CSS para imagens</p>
+<p>4.7 Alterando a largura de um elemento</p>
+<p>4.8 Extra: Time de Front-End</p>
+<p>4.9 O visual do produto</p>
+<p>4.10 Consolidando o seu conhecimento</p>
+<p>4.11 O que aprendemos?</p>
 
-5. Listas e divisões de conteúdo
-5.1 Projeto da aula anterior
-5.2 Trabalhando com listas
-5.3 Estrutura de uma lista em HTML
-5.4 Divisões de conteúdo
-5.5 Criando blocos de conteúdo
-5.6 Inline e Block
-5.7 Quando usar a propriedade class
-5.8 Consolidando o seu conhecimento
-5.9 O que aprendemos?
+<h2>5. Listas e divisões de conteúdo</h2>
+<p>5.1 Projeto da aula anterior</p>
+<p>5.2 Trabalhando com listas</p>
+<p>5.3 Estrutura de uma lista em HTML</p>
+<p>5.4 Divisões de conteúdo</p>
+<p>5.5 Criando blocos de conteúdo</p>
+<p>5.6 Inline e Block</p>
+<p>5.7 Quando usar a propriedade class</p>
+<p>5.8 Consolidando o seu conhecimento</p>
+<p>5.9 O que aprendemos?</p>
 
-6. Finalizando a página
-6.1 Projeto da aula anterior
-6.2 Cabeçalho
-6.3 Informações do cabeçalho
-6.4 Tag de cabeçalho
-6.5 Consolidando o seu conhecimento
-6.6 Projeto do curso
-6.7 class=titulo-principal
-6.8 O que aprendemos?
-6.9 Projeto do Curso
-6.10 Conclusão
+<h2>6. Finalizando a página</h2>
+<p>6.1 Projeto da aula anterior</p>
+<p>6.2 Cabeçalho</p>
+<p>6.3 Informações do cabeçalho</p>
+<p>6.4 Tag de cabeçalho</p>
+<p>6.5 Consolidando o seu conhecimento</p>
+<p>6.6 Projeto do curso</p>
+<p>6.7 class=titulo-principal</p>
+<p>6.8 O que aprendemos?</p>
+<p>6.9 Projeto do Curso</p>
+<p>6.10 Conclusão</p>
