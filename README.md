@@ -1,4 +1,4 @@
-<h1>📚 HTML5 e CSS3 parte 1: crie uma página da Web<h1>
+<h1>📚 HTML5 e CSS3 parte 2: posicionamento, listas e navegação<h1>
 
 <h2>1. Criando uma nova página </h2>
 <p>1.1 Introdução</p>
