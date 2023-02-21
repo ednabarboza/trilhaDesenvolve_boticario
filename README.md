@@ -31,10 +31,7 @@
 <p>3.5 Múltiplas famílias tipográficas</p>
 <p>3.6 Inserindo ícones</p>
 <p>3.7 Faça como eu fiz</p>
-<p>3.8 O que aprendemos?</p>
-<p>3.9 </p>
-<p>3.10 </p>
-<p>3.11 </p><br>
+<p>3.8 O que aprendemos?</p><br>
 
 <h2>4. Recursos mais avançados</h2>
 <p>4.1 Projeto da aula anterior</p>
