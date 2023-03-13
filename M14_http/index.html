@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HTTP</title>
+  </head>
+  <body>
+    <h1>HTTP: Entendendo a web por baixo dos panos</h1>
+    <p>
+      <strong> HTTP(Hypertext Transfer Protocol): </strong>é um Protocolo de
+      Transferência de Hipertexto que propõe regras para a comunicação entre
+      cliente e servidor. Mas atenção, quando usamos esse protocolo todos os
+      dados enviados entre cliente e servidor são transmitidos em texto puro,
+      inclusive dados sensíveis, como login e senha! O HTTP é stateless (não
+      mantém informações e cada requisição feita é única). Usa sessões para
+      guardar informações nos cookies.
+    </p>
+    <p>
+      No mundo HTTP a comunicação segue sempre esse modelo: o cliente envia uma
+      requisição e o servidor responde. Requisição e Resposta ou em inglês:
+      Request-Response. Aqui é importante saber que a comunicação sempre começa
+      com o cliente: é ele quem pede as informações. O servidor responde apenas
+      o que foi requisitado e nunca inicia a comunicação!
+    </p>
+    <div class="request-response">
+      <img
+        class="image-request-response"
+        src="./alura-request-response.png"
+        alt="Imagem do navegador Chrome com uma seta com nome requisição apontando para o nome Alura com uma seta com o nome resposta apontando de volta para o navegador"
+      />
+    </div>
+    <p>*Sessão: é o tempo que o cliente permanece ativo no sistema</p>
+    <p>
+      *Cookies: pequeno arquivo de texto que guarda informações sobre o usuário
+      no navegador (fica associado com o domínio e guarda o número de session
+      ID).
+    </p>
+    <h2>HTTPS - A versão segura do HTTP</h2>
+    <p>
+      <strong>HTTPS: </strong> é o HTTP comum, porém com uma camada adicional de
+      segurança/criptografia (SSL/TLS). O HTTPS para garantir segurança usa
+      criptografia baseada em chaves públicas e privadas e para gerar essas
+      chaves públicas e privadas é preciso garantir a identidade de quem possui
+      essas chaves e isso é feito a partir de um certificado digital, ou seja,
+      um certificado digital é utilizado para identificar determinada entidade e
+      ainda é utilizada para geração das chaves de criptografia. Apesar disso,
+      ainda é necessário que uma autoridade certificadora, que nada mais é que
+      um órgão ou entidade confiável, garanta não apenas a identidade do site
+      mas também a validade do certificado.
+    </p>
+    <p>*SSL (Secure Sockets Layer) e TLS (Transport Layer Security)</p>
+    <div class="chaves">
+      <div class="assimetrica">
+        <h3>Criptografia Assimétrica</h3>
+        <img
+          class="image-assimetrica"
+          src="./cripto-assimetrica.png"
+          alt="Desenho mostrando mostrando duas chaves, uma escrita o nome publica e navegador e a outra escrita o nome privada e servidor"
+        />
+      </div>
+      <div class="simetrica">
+        <h3>Criptografia Simétrica</h3>
+        <img
+          class="image-simetrica"
+          src="./cripto-simetrica.png"
+          alt="Desenho mostrando mostrando duas chaves, uma escrita o nome chave e navegador e a outra escrita o nome chave e servidor"
+        />
+      </div>
+    </div>
+    <p>
+      HTTPS usa ambos os métodos de criptografia, assimétrica e simétrica. Ele
+      começa com criptografia assimétrica e depois muda para criptografia.
+      simétrica
+    </p>
+    <p>
+      <strong>DNS (Domain Name System):</strong> realiza a tradução do nome de
+      um domínio para o endereço ID correspondente
+    </p>
+    <div class="url">
+      <img class="image-url" src="./http-url.png" alt="imagem de uma URL" />
+    </div>
+    <h2>Portas</h2>
+    <p>
+      Por padrão a porta 80 é referente ao método HTTP e a porta 443 ao HTTPS.
+    </p>
+    <h2>Métodos HTTP</h2>
+    <div class="metodos-http">
+      <img
+        class="image-method-http"
+        src="./métodos http.png"
+        alt="Imagem com os métodos http e suas funções"
+      />
+    </div>
+    <h2>Status Code</h2>
+    <p>
+      O status code do HTTP tem relação com o que aconteceu no processamento do
+      pedido
+    </p>
+    <div class="status-code">
+      <img
+        class="image-status-code"
+        src="./status code.png"
+        alt="Valores dos status code do HTTP"
+      />
+    </div>
+    <p>
+      Para fazer requisições usando métodos como PUT, PATCH e DELETE precisamos
+      utilizar códigos JavaScript. Esses métodos são mais utilizados em web
+      services
+    </p>
+    <h2>Parâmetros na requisição</h2>
+    <div class="parametros">
+      <img
+        class="image-parametros"
+        src="./parametros.png"
+        alt="URL com os valores dos parâmetros"
+      />
+    </div>
+    <p>
+      Nas requições realizadas podemos especificar o formato que esperamos
+      receber a resposta, para isso usamos o cabeçalho accept
+    </p>
+    <p>
+      Exemplo: Accept: text/html, Accept: text/css, Accept: application/xml,
+      Accept: application/json, etc
+    </p>
+    <h2>REST (Representation State Transfer)</h2>
+    <div class="rest">
+      <img
+        class="image-rest"
+        src="./rest.png"
+        alt="Imagem de um triângulo mostrando em cada ponta o recurso, as operações e a representação do REST"
+      />
+    </div>
+    <ul class="lista">
+      <li>É um padrão arquitetal para comunicação entre aplicações.</li>
+      <li>Aproveita da arquitetura do HTTP</li>
+      <li>Recursos são definidos via URI</li>
+      <li>Operações com os métodos HTTP (GET, POST, PUT, DELETE)</li>
+      <li>
+        Cabeçalhos (Accept/Content-Type) para especificar a representação (JSON,
+        XML, etc)
+      </li>
+    </ul>
+    <h2>HTTP/2</h2>
+    <p>
+      HTTP/2: traz os dados em binário, comprimidos num algoritmo chamado hpack
+      e criptografados com TLS. O cabeçalho é stateful (não guarda estado)
+    </p>
+    <p>*hpack é usado apenas para headers</p>
+    <h3>Server Push no HTT/2</h3>
+    <p>
+      O servidor pode empurrar para os clientes certos recursos antes mesmo de
+      serem solicitados, pois ele consegue analisar o HTML e ver o que é preciso
+      para carregar a página
+    </p>
+    <h3>HTTP/2 é Multiplexing</h3>
+    <p>Requisição e respostas são paralelas</p>
+    <h3>HTTP/2 é Headers Stateful</h3>
+    <p>São enviados apenas os cabeçalhos que tem mudanças</p>
+    <p>
+      Obs: podemos realizar a depuração de requisição via linha de comando
+      usando o comando <strong>(curl -v + URL)</strong>
+    </p>
+  </body>
+</html>
