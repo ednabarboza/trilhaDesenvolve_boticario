@@ -1,0 +1,92 @@
+body {
+  margin: 16px 26px;
+}
+
+.bit-byte {
+  display: inline-block;
+  font-weight: bold;
+  border: 2px solid red;
+}
+
+.compiladores-interpretadores {
+  display: flex;
+}
+
+.x {
+  font-size: xx-large;
+  margin: 56px 56px 0px 56px;
+}
+
+.java {
+  width: 50%;
+}
+
+.cicloDoProcessador {
+  width: 20%;
+}
+
+.hierarquiaMemoria,
+.cache,
+.processador {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .compiladores-interpretadores {
+    display: flex;
+    flex-direction: column;
+  }
+  .x {
+    display: none;
+  }
+
+  .java {
+    width: 80%;
+  }
+
+  .cicloDoProcessador {
+    width: 80%;
+  }
+
+  .hierarquiaMemoria,
+  .cache,
+  .processador {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p,
+  strong,
+  li {
+    font-size: 12px;
+  }
+
+  .compiladores-interpretadores {
+    display: flex;
+    flex-direction: column;
+  }
+  .x {
+    display: none;
+  }
+
+  .java,
+  .hierarquiaMemoria,
+  .cache,
+  .processador {
+    width: 100%;
+  }
+
+  .cicloDoProcessador {
+    width: 70%;
+  }
+}
