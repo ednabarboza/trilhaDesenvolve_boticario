@@ -1,5 +1,7 @@
 <h1>📚 Trilha Desenvolve- Full Stack<h1>
-
+  
+<img align="right" src="https://media.tenor.com/DimzPZMypFcAAAAM/laptop.gif" alt="Gif gatinho">
+  
 <h2>1. Semana 01</h2>
 <p>MÓDULO 01 - HTML5 e CSS3 parte 1: crie uma página da Web</p>
 <p>MÓDULO 02 - HTML5 e CSS3 parte 2: posicionamento, listas e navegação</p><br>
