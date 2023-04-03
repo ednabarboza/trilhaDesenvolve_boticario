@@ -1,6 +1,6 @@
 <img align="right" src="https://media.tenor.com/1c0iS_GQ5EoAAAAM/bare-tree-media-btm.gif" alt="Gif de menina programando">
 
-# 📚 Trilha Desenvolve- Full Stack <br>
+# 📚 Trilha Desenvolve- Full Stack <br><br><br><br><br><br>
 
 <h2>Semana 01</h2>
 <p>Módulo 01 - HTML5 e CSS3 parte 1: crie uma página da Web</p>
