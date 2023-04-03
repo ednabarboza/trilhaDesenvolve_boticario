@@ -2,8 +2,6 @@
 
 # 📚 Trilha Desenvolve- Full Stack
 
-<hr>
-  
 <h2>Semana 01</h2>
 <p>Módulo 01 - HTML5 e CSS3 parte 1: crie uma página da Web</p>
 <p>Módulo 02 - HTML5 e CSS3 parte 2: posicionamento, listas e navegação</p><br>
