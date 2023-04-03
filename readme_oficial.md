@@ -1,6 +1,7 @@
 <img align="right" src="https://media.tenor.com/1c0iS_GQ5EoAAAAM/bare-tree-media-btm.gif" alt="Gif de menina programando">
 
-<h1>📚 Trilha Desenvolve- Full Stack<h1>
+📚 Trilha Desenvolve- Full Stack
+
 <hr>
   
 <h2>Semana 01</h2>
