@@ -1,6 +1,6 @@
 <img align="right" src="https://media.tenor.com/1c0iS_GQ5EoAAAAM/bare-tree-media-btm.gif" alt="Gif de menina programando">
 
-### 📚 Trilha Desenvolve- Full Stack
+# 📚 Trilha Desenvolve- Full Stack
 
 <hr>
   
