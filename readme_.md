@@ -1,6 +1,6 @@
 <h1>📚 Trilha Desenvolve- Full Stack<h1>
   
-<img align="right" src="https://media.tenor.com/DimzPZMypFcAAAAM/laptop.gif" alt="Gif de menina programando">
+<img align="right" src="https://media.tenor.com/1c0iS_GQ5EoAAAAC/bare-tree-media-btm.gif" alt="Gif de menina programando">
   
 <h2>1. Semana 01</h2>
 <p>MÓDULO 01 - HTML5 e CSS3 parte 1: crie uma página da Web</p>
