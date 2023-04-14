@@ -46,53 +46,53 @@
 <p>Módulo 21 - JavaScript: programação orientada a objetos</p><br>
 
 <h2>Semana 12</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 22 - JavaScript para Web: Crie páginas dinâmicas</p>
+<p>Módulo 23 - JavaScript: manipulando o DOM</p><br>
 
 <h2>Semana 13</h2>
-<p> </p>
-<p></p><br>
+<p>Módulo 24 - Git e GitHub: repositório, commit e versões</p>
+<p>Módulo 25 -JavaScript na Web: validação de Formulários e HTML5</p><br>
 
 <h2>Semana 14</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 26 - JavaScript: consumindo e tratando dados de uma API</p>
+<p>Módulo 27 - JS na web: CRUD com JavaScript assíncrono</p><br>
 
 <h2>Semana 15</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 28 - SQL com MySQL: manipule e consulte dados</p>
+<p>Módulo 29 - Consultas SQL: avançando no SQL com MySQL</p><br>
 
 <h2>Semana 16</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 30 - MongoDB: uma alternativa aos bancos relacionais tradicionais</p>
+<p>Módulo 31 - Node.js: criando sua primeira biblioteca</p><br>
 
 <h2>Semana 17</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 32 - ORM com NodeJS: API com Sequelize e MySQL</p>
+<p>Módulo 33 - Node.js: API Rest com Express e MongoDB</p><br>
 
 <h2>Semana 18</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 34 - ORM com NodeJS: avançando nas funcionalidades do Sequelize</p>
+<p>Módulo 35 - Node.js e JWT: autenticação com tokens</p><br>
 
 <h2>Semana 19</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 36 - TypeScript parte 1: evoluindo seu JavaScript</p>
+<p>Módulo 37 - TypeScript parte 2: avançando na linguagem</p><br>
 
 <h2>Semana 20</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 38 - Typescript parte 3: mais técnicas e boas práticas</p>
+<p>Módulo 39 - Expressões regulares: capturando textos de forma mágica</p><br>
 
 <h2>Semana 21</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 40 - React: escrevendo com Typescript</p>
+<p>Módulo 41 - React: lidando com arquivos estáticos</p><br>
 
 <h2>Semana 22</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 42 - React: conhecendo a biblioteca React Router</p>
+<p>Módulo 43 - React: integrando seu projeto React com APIs</p><br>
 
 <h2>Semana 23</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 44 - React: gerenciando estado com Recoil</p>
+<p>Módulo 45 - LGPD: conhecendo e entendendo seus impactos</p><br>
 
 <h2>Semana 24</h2>
-<p> </p>
-<p> </p><br>
+<p>Módulo 46 - React: testando os seus componentes</p>
+<p>Módulo 47 - Node.js: testes unitários e de integração</p><br>
