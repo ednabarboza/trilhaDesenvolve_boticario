@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Importação/Exportação de módulos</title>
+  </head>
+  <body>
+    <h1>Módulos em JavaScript</h1>
+    <p>
+      Quando trabalhamos com NodeJS, é comum usarmos arquivos diferentes para
+      separar e organizar o código. Cada arquivo .js é um módulo independente e
+      suas funções, variáveis e classes não são compartilhados com o restante do
+      código, a não ser quando são
+      <strong>
+        explicitamente exportados e importados em outros módulos.</strong
+      >
+    </p>
+    <p>
+      O JavaScript, em seus diversos interpretadores, faz a
+      importação/exportação de módulos de duas formas, usando a sintaxe CommonJS
+      ou CJS ou a sintaxe EcmaScript Modules, ou ESM. Vamos ver exemplos de
+      ambas as formas.
+    </p>
+    <h2>CommonJS, ou CJS</h2>
+    <p>
+      Até a versão 13, a função que o NodeJS utiliza por padrão para importar
+      módulos em um arquivo é require(). Os módulos podem importar e exportar
+      todas as funções declaradas no arquivo ou apenas algumas, de acordo com o
+      necessário.
+      <strong>
+        Este é o formato de exportação e importação de módulos conhecido como
+        CommonJS ou CJS.</strong
+      >
+    </p>
+    <p>Por exemplo, para exportar apenas uma função em um arquivo:</p>
+    <div class="codigo1">
+      <code>
+        <span class="vermelho">module</span>.exports =
+        <span class="vermelho">function</span>
+        <span class="azul">soma</span>(num1, num2) { <br />
+        return num1 + num2; <br />
+        };
+      </code>
+    </div>
+
+    <p>ou</p>
+    <div class="codigo2">
+      <code>
+        <span class="vermelho">function</span>
+        <span class="azul">soma</span> (num1, num2) { <br />
+        <span class="vermelho">return</span> num1 + num2; <br />} <br /><span
+          class="vermelho"
+          >module</span
+        >
+        .exports = soma;
+      </code>
+    </div>
+
+    <p>
+      É possível exportar apenas a função que precisa ser executada a partir de
+      outra parte do código, enquanto outras funções do mesmo arquivo permanecem
+      inacessíveis ao restante. Por exemplo:
+    </p>
+    <div class="codigo3">
+      <code>
+        <span class="vermelho">function</span>
+        <span class="azul">soma</span>(num1, num2) { <br />
+        <span class="vermelho">return</span> num1 + num2; <br />
+        }<br /><br />
+        <span class="vermelho">function</span>
+        <span class="azul">multiplica</span>(num1, num2) {<br />
+        <span class="vermelho">return</span> soma(num1, num2) * 2; <br />}
+        <br /><br /><span class="vermelho">module</span>.exports = multiplica;
+      </code>
+    </div>
+
+    <p>
+      No exemplo anterior, declaramos as funções <code>soma()</code> e
+      <code>multiplica()</code>. A função <code>multiplica()</code> executa
+      <code>soma()</code> dentro de seu escopo e retorna um resultado. Podemos
+      exportar somente a função <code>multiplica()</code> para ser utilizada em
+      outras partes do código, sem a necessidade de exportar tudo.
+    </p>
+    <p>
+      Por outro lado, caso seja necessário exportar e importar mais de uma
+      função, podemos fazer isso exportando um único objeto no final do
+      arquivo/módulo:
+    </p>
+    <div class="código4">
+      <code>
+        <span class="vermelho">function</span>
+        <span class="azul">soma</span> (num1, num2) {<br />
+        <span class="vermelho">return</span> num1 + num2;<br />
+        }<br /><br />
+        <span class="vermelho">function</span>
+        <span class="azul">multiplica</span>(num1, num2) {<br />
+        <span class="vermelho">return</span> soma(num1, num2) * 2; <br />
+        } <br /><br /><span class="vermelho">module</span>.exports = {
+        multiplica, soma };
+      </code>
+    </div>
+
+    <p>Essas funções podem ser importadas desestruturando o mesmo objeto:</p>
+    <div class="código5">
+      <code>
+        <span class="vermelho">const</span> { multiplica, soma } =
+        require('./caminho/arquivo');<br /><br />
+        <span class="vermelho">const</span> resultadoMult = multiplica(2, 2);<br />
+        <span class="vermelho">const</span> resultadoSoma = soma(2, 2);
+      </code>
+    </div>
+
+    <p>
+      O mesmo princípio se aplica para módulos externos que instalamos em nosso
+      projeto a partir de um gerenciador de pacotes como o NPM (com
+      <code>npm install (nome da lib)</code> ); nesse caso não precisamos passar
+      o caminho, pois o JavaScript vai acessar os métodos necessários a partir
+      da pasta <code>node_modules</code> :
+    </p>
+    <code>
+      <span class="vermelho">const</span> chalk =
+      <span class="vermelho">require</span>('chalk');
+    </code>
+    <p>
+      A mesma coisa para módulos que já são <em>built-in</em> no NodeJS. Ou
+      seja, são módulos que integram o sistema, mas mesmo assim precisam ser
+      importados para dentro do projeto, como o módulo <code>fs</code> (file
+      system, ou sistema de arquivos):
+    </p>
+    <code>
+      <span class="vermelho">const</span> fs =
+      <span class="vermelho">require</span>('fs');
+    </code>
+    <p>
+      Já vimos como o <code>chalk</code> funciona e veremos o
+      <code>fs</code> mais para frente no curso.
+    </p>
+    <h2>EcmaScript Modules, ou ESM</h2>
+    <p>
+      Quando utilizamos o ESM, o mesmo processo de exportação de módulos é feito
+      com a sintaxe <code>export</code> ou <code>export default</code> e a
+      importação com a sintaxe
+      <code>import (nomeModulo) from ./caminho/arquivo.js</code>.
+    </p>
+    <p>
+      Esta outra forma de lidar com a importação e exportação de módulos veio
+      com o famoso ES6 ou JS2015 e foi aos poucos sendo implementada para
+      funcionar nativamente nos navegadores com a ajuda de
+      <em>bundlers</em> como o WebPack, que fazem a “tradução” de métodos do
+      JavaScript mais moderno para garantir retrocompatibilidade.
+    </p>
+    <p>
+      Hoje o ESM já funciona nativamente em todos os navegadores e passou a ter
+      suporte para Node a partir da versão 13 (no momento em que escrevemos este
+      conteúdo, o NodeJS está na versão 16.13.2). Mesmo assim, grande parte das
+      aplicações desenvolvidas com NodeJS ainda utiliza o formato CJS de
+      importação e exportação de módulos e as bibliotecas, pacotes e frameworks
+      estão em processo de substituição do CJS para o ESM.
+    </p>
+    <p>
+      A sintaxe do ESM segue os exemplos abaixo. Para exportar funções, por
+      exemplo:
+    </p>
+    <div class="código6">
+      <code>
+        <span class="vermelho">export</span>
+        <span class="vermelho">function</span>
+        <span class="azul">soma</span>(num1, num2) {<br />
+        <span class="vermelho">return</span> num1 + num2; <br />} <br />
+        export
+        <span class="vermelho">function</span>
+        <span class="azul">multiplica</span>(num1, num2) {<br />
+        <span class="vermelho">return</span> soma(num1, num2) * 2; <br />
+        }
+      </code>
+    </div>
+
+    <p>
+      Ou, alternativamente, para exportar somente a função
+      <code>multiplica()</code> como <em>default</em>(padrão):
+    </p>
+    <div class="código7">
+      <code>
+        <span class="vermelho">function</span>
+        <span class="azul">soma</span>(num1, num2) {<br />
+        <span class="vermelho">return</span> num1 + num2; <br />
+        }<br /><br />
+        <span class="vermelho">function</span>
+        <span class="azul">multiplica</span>(num1, num2) {<br />
+        <span class="vermelho">return</span> soma(num1, num2) * 2; <br />
+        } <br />
+        <br />export <span class="vermelho">default</span> multiplica;
+      </code>
+    </div>
+
+    <p>Ou outra forma de exportar mais de uma função:</p>
+    <div class="código8">
+      <code>
+        <span class="vermelho">function</span>
+        <span class="azul">soma</span>(num1, num2) {<br />
+        <span class="vermelho">return</span> num1 + num2;<br />
+        }<br /><br />
+        <span class="vermelho">function</span>
+        <span class="azul">multiplica</span>(num1, num2) {<br />
+        <span class="vermelho">return</span> soma(num1, num2) * 2; <br />
+        } <br /><br />
+        <span class="vermelho">export</span> { multiplica, soma };
+      </code>
+    </div>
+
+    <p>Para fazer a importação, seguem os exemplos:</p>
+    <code>
+      <span class="vermelho">import</span> soma
+      <span class="vermelho">from</span> './caminho/arquivo.js';
+    </code>
+    <p>Ou, no caso de mais funções exportadas a partir do mesmo módulo:</p>
+    <code>
+      <span class="vermelho">import</span> { soma, multiplica }
+      <span class="vermelho">from</span>
+      './caminho/arquivo.js';
+    </code>
+    <p>É possível também importar de uma só vez todo o objeto exportado:</p>
+    <code>
+      <span class="vermelho">import</span> * as operacoes
+      <span class="vermelho">from</span>
+      './caminho/arquivo.js';
+    </code>
+    <p>E importar da seguinte forma:</p>
+    <div class="código9">
+      <code>
+        <span class="vermelho">const</span><span class="azul"> soma</span> =
+        operacoes.soma(1, 2); <br />
+        <span class="vermelho">const</span>
+        <span class="azul">multiplica</span> = operacoes.multiplica(1, 2);
+      </code>
+    </div>
+
+    <p class="importante">
+      Importante: para utilizar a sintaxe ESM com NodeJS é preciso incluir, no
+      arquivo <code>package.json</code>, a propriedade
+      <code>”type”: “module”</code> e sempre incluir a extensão do arquivo
+      <code>.js</code>
+      nos caminhos de importação - por exemplo
+      <code>import soma from ./caminho/arquivo.js</code>;
+    </p>
+    <p>
+      Existe uma convenção no uso de ESM em projetos NodejS, que é utilizar a
+      extensão .mjs para distinguir quais arquivos são módulos, continuando com
+      a extensão .js para os arquivos que não exportam módulos.
+    </p>
+
+    <h3>Conclusão</h3>
+    <ul>
+      <li>
+        O sistema CJS (CommonJS) foi desenvolvido para funcionar como o sistema
+        de exportação/importação de módulos do NodeJS.
+      </li>
+      <li>
+        O ESM (EcmaScript Modules) foi desenvolvido para que o JavaScript
+        tivesse nativamente seu próprio sistema de módulos - estamos falando do
+        JavaScript interpretado nos navegadores.
+      </li>
+      <li>O NodeJS implementou o suporte ao ESM a partir da versão 13.</li>
+    </ul>
+
+    <style>
+      body {
+        margin: 6px 26px;
+      }
+      code,
+      .importante {
+        background-color: rgb(231, 228, 228);
+      }
+      .vermelho {
+        color: red;
+      }
+      .azul {
+        color: blue;
+      }
+
+      div {
+        background-color: rgb(231, 228, 228);
+        width: 35%;
+        padding-left: 16px;
+      }
+    </style>
+  </body>
+</html>
