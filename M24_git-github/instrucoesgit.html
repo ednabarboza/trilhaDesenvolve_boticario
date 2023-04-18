@@ -1,0 +1,109 @@
+<h2>Usando o GIT/GitHub</h2>
+
+<ul>
+  <li>Para ver lista de arquivos: <b>ls</b><br /></li>
+  <li>Para limpar tela: <b>ctrl + l</b><br /></li>
+  <li>Voltar um nível: <b>cd..</b><br /></li>
+  <li>Completar uma palavra: <b>tecla TAB</b><br /></li>
+  <li>Percorrer ítens <b>seta para cima do teclado</b><br /></li>
+</ul>
+
+<ol>
+  <li>
+    Clica com o botão direito no local que deseja abrir o git e clica em:
+    <b>git bash here</b><br /><br />
+  </li>
+
+  <li>Para entrar numa pasta: <b>cd nome da pasta</b><br /></li>
+  Exemplo: Se a pasta se chama workspace: cd workspace<br /><br />
+
+  <li>Para criar uma pasta: <b>mkdir nome da pasta a ser criada</b><br /></li>
+  Exemplo: Se quero criar uma pasta chamada livro-receitas: mkdir
+  livro-receitas<br /><br />
+
+  <li>
+    Rodar o git unit para o git versionar o código: <b>git unit </b><br /><br />
+  </li>
+
+  <li>
+    Flag para mostrar arquivos ocultos, como por exemplo a pasta ".git"(pasta
+    gerencial do git): <b>ls -a</b><br /><br />
+  </li>
+
+  <li>Entrar na pasta ".git": <b>cd .git/</b><br /><br /></li>
+
+  <li>
+    Adicionar arquivos para serem commitados: <b>git add .</b><br /><br />
+  </li>
+
+  <li>
+    Criando commit mais mensagem:
+    <b>git commit -m "mensagem a ser inserida" (mensagem entre aspas)</b
+    ><br /><br />
+  </li>
+
+  <li>Ver o status do arquivo: <b>git status</b><br /><br /></li>
+
+  <li>
+    Mover arquivo para um repositório: <b>mv strogonoff.md ./receitas/</b><br />
+  </li>
+  Exemplo: Se eu tiver um arquivo de nome "strogonoff.md" e quero mover para a
+  pasta(repositório) "receitas"<br /><br />
+
+  <li>
+    Verificar as configurações do git: <b>git config --list</b><br /><br />
+  </li>
+
+  <li>
+    Enviar arquivo local p/o remoto(git hub):
+    <b>git remote add origin (link obtido do git hub)</b><br /><br />
+  </li>
+
+  <li>
+    Ver listas de repositórios remotos cadastradas: <b>git remote -v</b
+    ><br /><br />
+  </li>
+
+  <li>
+    "Empurrar" o repositório local para o remoto: <b>git push origin master</b
+    ><br /><br />
+  </li>
+</ol>
+
+<p>
+  <b>Observações:</b><br />
+  <br /><u>Criar os comandos para configuração de dados do autor</u><br />
+  - Para email:
+  <b>git config --global user.email "email desejado" (entre aspas)</b><br />
+  - Para o username:
+  <b>git config --global user.name "username desejado"(sem as aspas)</b><br />
+
+  <br /><u>Alterar os dados da configuração do autor</u><br />
+  - Para email: <b>git config --global --unset user.email</b><br />
+  - Para username: <b>git config --global --unset user.name</b>
+
+  <br /><br /><u>Abrir o VSCode no GitHub</u><br />
+  - Na página do repositório clicar em: <b>. (tecla ponto)</b><br />
+</p>
+
+<b>Mais alguns comandos</b>
+<p>
+  <b>git restore --source (numero do commit) . </b> - Usado para voltar um
+  commit. O ponto indica que todos os arquivos sofrerão modificação, podemos
+  colocar o nome do arquivo indivialmente mais a sua extensão indicando onde
+  queremos modificar.
+</p>
+<p>
+  <b
+    >git switch (nome da branch) - Para trocar de branch - similar ao
+    <b>git checkout (nome da branch)</b>
+  </b>
+</p>
+
+<p>
+  <b>git merge (nome da branch que deseja mergear)</b> - Fazer merge localmente
+</p>
+
+<p>
+  <b>git log --oneline</b> - Ver o log da nossa aplicação em apenas uma linha.
+</p>
