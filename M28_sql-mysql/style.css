@@ -1,0 +1,17 @@
+.comandos {
+  color: blue;
+  font-weight: bold;
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+.bancoDeDados {
+  display: block;
+  width: 25%;
+}
+
+code {
+  background-color: #ffff00;
+}
