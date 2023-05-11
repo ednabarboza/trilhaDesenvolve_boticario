@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Mongo DB</title>
+  </head>
+  <body>
+    <h1>MongoDB: uma alternativa aos bancos relacionais tradicionais</h1>
+    <p>
+      Uma situação onde o MongoDB é bastante usado é quando precisamos realizar
+      buscas por proximidade, como, por exemplo, localizar a pizzaria mais
+      próxima de você.
+    </p>
+    <p>
+      Situações onde o uso do MongoDB não é indicado são cenários onde
+      precisamos fazer muitas operações de agregação em uma única query, isso
+      tem muito custo para o MongoDB.
+    </p>
+    <h2>Criando coleções e registros:</h2>
+    <p><span class="negrito">Rodar o banco: </span>mongosh</p>
+    <p>
+      <span class="negrito">Criar uma colletion: </span
+      >db.createColletion("nome_da_colecao")
+    </p>
+    <p>Exemplo:</p>
+    <img src="./img/criar_collection.PNG" alt="comando para criar colletion" />
+    <p>
+      <span class="negrito">Inserindo dados na colletion: </span
+      >db.nome_da_colecao.insert("objeto JS")
+    </p>
+    <p>Exemplo do comando:</p>
+    <img src="./img/inserir_colletion.PNG" alt="" />
+    <p>Exemplo de objeto JS:</p>
+    <img src="./img/objeto_js.PNG" alt="exemplo de objeto JS" />
+
+    <p>
+      <span class="negrito">Mostrar colletion: </span>db.alunos.find() OU
+      db.alunos.find().pretty()
+    </p>
+
+    <p>Exemplos:</p>
+    <img
+      src="./img/encontrar_registros.PNG"
+      alt="comando para encontrar registros"
+    />
+    <p>OU</p>
+    <img src="./img/find_pretty.PNG" alt="comando para encontrar registros" />
+    <p>
+      <span class="negrito">Removendo registros: </span
+      >db.nome_da_colecao.remove("objeto JS")
+    </p>
+    <p>Exemplo:</p>
+    <img
+      src="./img/remover_registros.PNG"
+      alt="comando para remover registros"
+    />
+
+    <h3>Filtrando dados</h3>
+    <p>Como conseguimos encontrar uma Colletion específica</p>
+    <p>Exemplo 1:</p>
+    <img src="./img/consulta_especifica.PNG" alt="" />
+    <p>Exemplo 2:</p>
+    <img src="./img/consulta_especifica1.PNG" alt="" />
+    <p>Exemplo 3:</p>
+    <img src="./img/consulta_especifica2.PNG" alt="" />
+    <p>Exemplo 4:</p>
+    <img src="./img/consulta_especifica_pretty.PNG" alt="" />
+
+    <h3>Consultas com OR, AND e IN</h3>
+    <p>Exemplo de consulta com OR:</p>
+    <img src="./img/comando_ou.PNG" alt="Exemplo de consulta com OR" />
+
+    <p>Exemplo de consulta com AND:</p>
+    <img
+      class="comando"
+      src="./img/usando_and.png"
+      alt="Exemplo de consulta com AND"
+    />
+
+    <p>Exemplo de consulta com IN:</p>
+    <img
+      class="comando"
+      src="./img/comando_in.png"
+      alt="Exemplo de consulta com IN"
+    />
+
+    <h2>Atualização completa e parcial de documentos</h2>
+    <h3>Atualização parcial:</h3>
+    <p>Exemplo 1:</p>
+    <img
+      src="./img/atualizacao_parcial_doc.png"
+      alt="Atualização parcial de documentos"
+    />
+    <p>Exemplo 2:</p>
+    <img
+      class="comando"
+      src="./img/atualizacao_parcial1_doc.png"
+      alt="Atualização parcial de documentos"
+    />
+
+    <h3>Atualização completa:</h3>
+    <p>Exemplo:</p>
+    <img
+      class="comando"
+      src="./img/atualizacao_completa_doc.png"
+      alt="Atualização parcial de documentos"
+    />
+
+    <h3>Atualizando Arrays</h3>
+    <h4>Um elemento por vez</h4>
+    <p>Exemplo:</p>
+    <img
+      class="comando"
+      src="./img/atualiza_array_push.png"
+      alt="Atualizando Arrays com push"
+    />
+    <h4>Mais de um elemento</h4>
+    <p>Exemplo:</p>
+    <img
+      class="comando"
+      src="./img/atualiza_array_push_each.png"
+      alt="Atualizando Arrays com push usando each"
+    />
+    <h3>Buscando e limitando registros</h3>
+    <p>Exemplo: Procurando registro de nota maior que determinado valor</p>
+    <img
+      src="./img/nota_maior_que.PNG"
+      alt="Procurando registro de nota maior que determinado valor"
+    />
+    <p class="destaque">Onde: gt = greater than (maior que)</p>
+
+    <p>
+      Exemplo: Procurando registro de nota maior que determinado valor - Traz
+      apenas 1 valor (o primeiro que encontra)
+    </p>
+    <img
+      src="./img/find_one.PNG"
+      alt="Procurando registro de nota maior que determinado valor e traz valor único - o primeiro que encontrar"
+    />
+    <h3>Ordenando registros</h3>
+    <p>Em ordem crescente</p>
+    <img
+      class="comando"
+      src="./img/ordenacao_crescente.PNG"
+      alt="Ordenando registros em ordem crescente"
+    />
+    <p>Em ordem decrescente</p>
+    <img
+      class="comando"
+      src="./img/ordenacao_decrescente.PNG"
+      alt="Ordenando registros em ordem decrescente"
+    />
+    <p>Ordenando e limitando número de registros</p>
+    <img
+      class="comando"
+      src="./img/limitando_ordenacao.PNG"
+      alt="Ordenando e limitando número de registros"
+    />
+    <h2>Posicionamento no MongoDB</h2>
+    <h3>Inserindo a localização:</h3>
+    <img
+      class="comando"
+      src="./img/inserindo_localizacao.PNG"
+      alt="Inserindo a localização:"
+    />
+    <h3>Importando arquivos</h3>
+    <img
+      class="comando"
+      src="./img/importar_arq.PNG"
+      alt="Importando arquivos"
+    />
+    <p class="destaque">
+      OBS: Esse comando de importação não está funcionando nas novas versões!
+    </p>
+
+    <h2>Busca por proximidade</h2>
+    <h3>Criando índice de busca</h3>
+    <img
+      class="comando"
+      src="./img/criar-indice-localizacao.PNG"
+      alt="Criando índice de busca"
+    />
+    <h3>Realizando busca por agregação</h3>
+    <img
+      class="comando"
+      src="./img/busca_agregacao.PNG"
+      alt="Realizando busca por agregação"
+    />
+
+    <h3>Limitando dados a serem apresentados na busca por agregação</h3>
+    <img
+      class="comando"
+      src="./img/busca_agregacao_limitando_dados.PNG"
+      alt="Limitando dados na busca por agregação"
+    />
+    <h3>Ignorando dados a ser apresentado na busca por agregação</h3>
+    <img
+      class="comando"
+      src="./img/busca_agregacao_ignorando_elem.PNG"
+      alt="Ignorando dados a ser apresentado na busca por agregação"
+    />
+  </body>
+</html>

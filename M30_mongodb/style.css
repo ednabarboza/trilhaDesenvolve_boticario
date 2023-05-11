@@ -1,0 +1,12 @@
+.negrito {
+  font-weight: bold;
+}
+
+.comando {
+  width: 30%;
+}
+
+.destaque {
+  background-color: #ffff00;
+  width: 20%;
+}
