@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testando</title>
+  </head>
+  <body>
+    <form>
+      <input pattern="[0-9]*" />
+      <input type="submit" value="Enviar dados" />
+      <div>
+        <input type="text" pattern="[A-Za-z]*" placeholder="Nome Completo" />
+        <input type="number" pattern="[0-9]*" placeholder="idade" />
+        <input type="submit" value="enviar" />
+      </div>
+    </form>
+    <script>
+      var alvo = "11a22b33c";
+      var exp = /(\d\d)(\w)/g;
+
+      var resultado = exp.exec(alvo);
+      console.log(resultado);
+
+      //   Resultado será: ["11a", "11", "a"], ou seja, um array no qual o primeiro item é o match
+      //   Os demais parâmetros equivalem ao padrão que colocamos para cada () da nossa expressão
+
+      //   for (var i = 0; i < alvo.length; i++) {
+      //     var resultado = exp.exec(alvo);
+      //     console.log(resultado[0]);
+      //   }
+
+      //exercicio 1
+      //   var anoMesDia = "2007-12-31";
+      //   var exp = /-/g;
+      //   anoMesDia = anoMesDia.replace(exp, "/");
+      //   console.log(anoMesDia);
+
+      //exercicio 2
+      //   var arquivo = "100,200-150,200;20";
+      //   var exp = /[,;-]/;
+      //   var valores = arquivo.split(exp);
+      //   console.log(valores);
+
+      //exercicio 3
+      //   var codigos = "A121B12112C12212F12G01";
+      //   var exp = /[A-Za-z]\d+/g;
+      //   var codigosExtraidos = codigos.match(exp);
+      //   console.log(codigosExtraidos);
+    </script>
+  </body>
+</html>
