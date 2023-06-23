@@ -14,7 +14,7 @@ npm versão 7.0.8
 
 ## ⚙️ Executando os testes
 
-Comando para executar os testes automatizados com nodemoon.
+Comando para executar os testes automatizados.
 
 ```
 npm start
