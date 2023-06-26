@@ -24,7 +24,7 @@ npm start
 
 Comando para executar a API.
 
-- Comando sserve para baixar as imagens do Docker necessárias para configurar todo o container da aplicação.
+- Comando serve para baixar as imagens do Docker necessárias para configurar todo o container da aplicação.
 
 ```
 docker-compose build
